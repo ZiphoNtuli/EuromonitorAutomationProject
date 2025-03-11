@@ -1,0 +1,8 @@
+{
+    "url" :"https://www.saucedemo.com/",
+    "Logo" :"Swag Labs",
+    "StandardUser" :"standard_user",
+    "password" :"secret_sauce",
+    "PasswordValidation_txt" : "Epic sadface: Password is required",
+    "UsernameValidation_txt" : "Epic sadface: Username is required"
+}

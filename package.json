@@ -1,0 +1,49 @@
+{
+    "name": "swag-labs-automation-project",
+    "description": "This is a Swag Labs Automation created using Cypress",
+    "version": "1.0.0",
+    "author": "Swag Labs Team",
+    "scripts": {
+      "clean:reports": "rimraf cypress/reports",
+      "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/swag-labs-e2e-report/report.json",
+      "create:reports": "mkdir cypress\\reports\\ & mkdir cypress\\reports\\mocha && mkdir cypress\\reports\\swag-labs-e2e-report", 
+      "zip-reports": "powershell.exe Compress-Archive cypress\\reports\\swag-labs-e2e-report cypress\\reports\\swag-labs-e2e-report.zip",
+      "cypress": "cypress run",
+      "generate-report": "marge cypress/reports/swag-labs-e2e-report/report.json -f report -o cypress/reports/swag-labs-e2e-report --cdn true --inline false --scripts https://unpkg.com/mochawesome-report-generator@6.2.0/dist/app.js --styles https://unpkg.com/mochawesome-report-generator@6.2.0/dist/app.css",
+      "prepare-report": "npm run combine-reports && npm run generate-report  && npm run zip-reports",
+      "pretest": "npm run clean:reports && npm run create:reports",
+      "test": "npm run cypress && npm run prepare-report"
+    },
+    "dependencies": {
+      "@badeball/cypress-cucumber-preprocessor": "^20.0.4",
+      "@cypress/browserify-preprocessor": "^3.0.2",
+      "cypress-multi-reporters": "^1.6.4",
+      "cypress-wait-until": "^3.0.1",
+      "cypress-xpath": "^2.0.1",
+      "mocha": "^10.4.0",
+      "mochawesome": "^7.1.3",
+      "mochawesome-merge": "^4.3.0",
+      "mochawesome-report-generator": "^6.2.0",
+      "nodemailer": "^6.9.15",
+      "typescript": "^5.4.5"
+    },
+    "cypress-cucumber-preprocessor": {
+      "nonGlobalStepDefinitions": true,
+      "stepDefinitions": [
+        "cypress/e2e/stepDefinition/*.ts"
+      ]
+    },
+    "devDependencies": {
+      "cypress": "^14.1.0",
+      "cypress-cucumber-preprocessor": "^4.3.1",
+      "rimraf": "^6.0.1"
+    },
+    "main": "sendReport.js",
+    "repository": {
+      "type": "git",
+      "url": "https://LNSA-DS@dev.azure.com/LNSA-DS/Swag%20Labs%20Responsive/_git/LN%20Swag%20Labs%20Automation%20New"
+    },
+    "keywords": [],
+    "license": "ISC"
+  
+}

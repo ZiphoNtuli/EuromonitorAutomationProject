@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "module": "nodenext"
+    },
+    
+    "include": [
+      "cypress/**/*.ts",
+      "cypress/**/*.js"
+    ]
+
+  }

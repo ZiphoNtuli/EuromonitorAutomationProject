@@ -1,0 +1,12 @@
+{
+"Name" : "Peter",
+"LastName" : "Griffin",
+"Code" : "123",
+"ValidName" : "Error: First Name is required",
+"ValidLastName" : "Error: Last Name is required",
+"ValidCode" : "Error: Postal Code is required",
+"ProblemUser" :"problem_user",
+"LockedOutUser" :"locked_out_user",
+"Checkout_txt" :"Checkout: Your Information",
+"LockedOutUserValidation" :"Epic sadface: Sorry, this user has been locked out."
+}
