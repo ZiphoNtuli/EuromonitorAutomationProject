@@ -1,23 +1,23 @@
 @runThis @run
 Feature: Negative
 
-Scenario: Locked User
+Scenario: Login - Locked_user
     Given I navigate to "Swag labs" login page
     When Click on Login button in "Swag labs" login page
     Then Validation errors for Username and Password are displayed
     When Enter valid LockedUser 
-    When Click on Login button in "Swag labs" login page
+    And Click on Login button in "Swag labs" login page
     Then Validation errors for Password are displayed
     When Enter valid Password
     And Click on Login button in "Swag labs" login page
     Then Confirm Validation for Locked User 
 
-Scenario: Problem User
+Scenario: Chekout - Problem_user
     Given I navigate to "Swag labs" login page
     When Click on Login button in "Swag labs" login page
     Then Validation errors for Username and Password are displayed
     When Enter valid Problem User
-    When Click on Login button in "Swag labs" login page
+    And Click on Login button in "Swag labs" login page
     Then Validation errors for Password are displayed
     When Enter valid Password
     And Click on Login button in "Swag labs" login page

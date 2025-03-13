@@ -5,13 +5,13 @@ Feature: Positive
         When Click on Login button in "Swag labs" login page
         Then Validation errors for Username and Password are displayed
         When Enter valid Username 
-        When Click on Login button in "Swag labs" login page
+        And Click on Login button in "Swag labs" login page
         Then Validation errors for Password are displayed
         When Enter valid Password
         And Click on Login button in "Swag labs" login page
         Then I confirm iam on "Swag Labs" home page 
 
-     Scenario:  Add Item To Cart 
+     Scenario:  Add Item To Cart -Standard_user
      Given Iam on "Swag Labs"  Product Page 
      And Confirm "Sauce Labs Backpack" text and "Sauce Labs Backpack" price
      When Click the "Sauce Labs Backpack" Add to Cart button on the Swag Labs Product Page 
@@ -22,7 +22,7 @@ Feature: Positive
      Then I Confirm Cart second Product Confirm notification 
      And Click Back to Product button
 
-     Scenario:  Edit Cart 
+     Scenario:  Edit Cart -Standard_user
      Given Iam on "Swag Labs"  Product Page
      When Click the "Sauce Labs Backpack" Add to Cart button on the Swag Labs Product Page
      Then I Confirm Cart first Product Confirm notification 
