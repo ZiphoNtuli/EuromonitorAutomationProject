@@ -1,18 +1,17 @@
-# Overview
-This project aims to be a full automation test suite for the Swag Labs solution. It uses [Cypress](https://www.cypress.io/) to interact with a web browser to test the system. It has the capability to generate reports using [mocha](https://mochajs.org/) and the tests are written as [cucumber](https://cucumber.io/docs/gherkin/reference/) feature files. All code files are written in [TypeScript](https://www.typescriptlang.org/).
+EUROMONITOR INTERNATIONAL TEST ASSESSMENT
 
-# Setup Instructions
+1. Automation (Cypress) 🔧
+The Cypress project is stored in the repo under the "Cypress" folder. To run the project, download all files from the repo, including the project configuration files and packages.
 
-To setup the repo first install [node.js](https://nodejs.org/en/download/). Then open a terminal in the root of the project and restore the node packages using the node package manager using this command:
+2. API Testing (Postman) 🌐 
+The collection file is named "Restful-booker.postman_collection.json" in the repo. Add the collection to Postman for execution.
 
-`npm install`
+3. Manual Testing (Excel) 📋
+The test cases are documented in the "MI TestCases" Excel sheet within the repo. The sheet is divided into tabs, from positive test cases to general tests.
 
-As a final step add any sensitive information that is required by the configuration files (such as user name and password) here:
+4. Load Testing (JMeter) 🚀 
+The load test files are in a zip file named "EMI JMeter", which contains BlazeMeter records and generated reports.
 
-`./cypress/fixtures/`
 
-Also add the DB configuration for the DB you want to execute scripts on here:
-
-`./cypress/fixtures/database-config.ts`
 
 
