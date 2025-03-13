@@ -1,4 +1,6 @@
-EUROMONITOR INTERNATIONAL TEST ASSESSMENT
+EUROMONITOR INTERNATIONAL TEST ASSESSMENT  
+
+Google Drive Link (https://drive.google.com/drive/folders/1UGhwzMnTjSKRMnZst0mTmBoSuAhUWmtd?usp=sharing)
 
 1. Automation (Cypress) 🔧
 The Cypress project is stored in the repo under the "Cypress" folder. To run the project, download all files from the repo, including the project configuration files and packages.
