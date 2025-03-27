@@ -9,18 +9,6 @@ class Actions {
         }
     }
 
-  selectDeedsOffice(dropdownArr, textData, multiselect ){
-    try{
-        dropdownArr.click()
-       multiselect.click()
-       multiselect.contains(textData).click()
-       dropdownArr.click()
-    }
-    catch(error) {
-            console.error(`the ${textData} element had an error`)
-    }}
-
-
     typeInTextBox(ele, textData, eleName) {
         try {
             ele.should('exist').should('be.visible').clear();
